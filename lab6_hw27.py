@@ -5,10 +5,12 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
+
 pop = pd.read_csv('nycHistPop.csv', skiprows=5)
 borough = input("Enter borough: ")
-print("Maximum population:", pop[borough].max())
-print("Average population:", pop[borough].mean())
+output = input("Please enter the name of the output file: ")
+pop['Fraction'] = pop[borough]/pop['Total']
+pop.plot(x='Year', y='Fraction')
 
-
-
+fig = plt.gcf()
+fig.savefig(output)

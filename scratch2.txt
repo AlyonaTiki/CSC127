@@ -1,5 +1,5 @@
 #Name: Alyona Karmazin
 #Date: 3/6/19
-#Program #24:  Computes the majority of 2 inputs
+#Account name for my github account
 
-out = (not in1 and not in2)
+AlyonaTiki
